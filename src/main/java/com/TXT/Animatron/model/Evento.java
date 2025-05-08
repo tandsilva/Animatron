@@ -14,17 +14,21 @@ public class Evento {
     private String local;
     private LocalDateTime inicio;
     private LocalDateTime fim;
-    private String observacoes;
+    private String Observacoes;
+
+
 
     // Construtor
-    public Evento(Long id, String titulo, String local, LocalDateTime inicio, LocalDateTime fim, String observacoes) {
+    public Evento(String titulo, String local, LocalDateTime inicio, LocalDateTime fim, String Observacoes) {
         this.id = id;
         this.titulo = titulo;
         this.local = local;
         this.inicio = inicio;
         this.fim = fim;
-        this.observacoes = observacoes;
+        this.Observacoes = Observacoes;
     }
+
+
 
     // Método para verificar se o evento está acontecendo agora
     public boolean estaAcontecendoAgora() {
